@@ -8,7 +8,7 @@ body {
 
 /* Header pakai flex */
 .header {
-  background: #007BFF;
+  background: #2A8F9E;
   color: white;
   padding: 1rem; 
   display: flex;
@@ -83,4 +83,29 @@ body {
 .footer a {
   color: #ddd;
   text-decoration: none;
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Default mobile-first: 1 kolom */
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+/* Untuk layar sedang: 2 kolom */
+@media (min-width: 600px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Untuk layar besar: 3 kolom */
+@media (min-width: 900px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
