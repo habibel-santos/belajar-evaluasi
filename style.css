@@ -35,6 +35,11 @@ body {
   margin-top: 2%;
 }
 
+.tetimoni{
+  color: #333333;
+  background-color: aliceblue;
+}
+
 /* Features */
 .features {
   padding: 5vh;
